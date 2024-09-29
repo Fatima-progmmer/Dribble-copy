@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navigation bar */
+
+
+nav {
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 15px 50px;
+    align-content: center;
+    width: 100%;
+}
+
+ul {
+    display: inline-block;
+}
+
+nav #logo {
+    margin-left: 10px;
+}
+
+li {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+ul li {
+
+    display: inline-block;
+    margin: 16px;
+    position: relative;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    top: 30px;
+    padding: 10px;
+    height: 150px;
+    overflow: visible;
+}
+
+
+#search {
+    margin-left: 200px;
+}
+
+nav input {
+    border: none;
+    width: 150px;
+    height: 35px;
+    padding: 5px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+li button {
+    border: none;
+}
+
+#singup button {
+    background-color: black;
+
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+#singup button a {
+    color: white;
+}
+
+nav li:hover {
+    color: rgb(104, 94, 94);
+}
+
+#singup button:hover {
+    background-color: rgb(104, 94, 94);
+}
+
+#logo {
+    font-size: 30px;
+}
+
+#login button {
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+#login button:hover {
+    background-color: rgb(205, 197, 197);
+    border-radius: 20px;
+}
+
+/* main */
+
+#first {
+    background-color: rgb(240, 235, 190);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 435px;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#second {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#start {
+    background-color: black;
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+    margin: 20px 530px;
+}
+
+#start:hover {
+    background-color: rgb(104, 94, 94);
+}
+
+/* Images */
+#images {
+    margin: 20px;
+}
+
+#images .slider {
+    width: 95%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+
+}
+
+#images .slides {
+    display: flex;
+    animation: slide 10s infinite linear;
+    flex-wrap: nowrap;
+}
+
+#images .slides img {
+    width: 300px;
+    border-radius: 10px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Explore */
+
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    margin-top: 20px;
+}
+
+.designs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.design {
+    margin: 20px;
+}
+
+.design .big {
+    width: 280px;
+    height: 200px;
+    margin: 30px;
+}
+
+.design .short {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.design .first {
+    margin-left: 150px;
+}
+
+.design span {
+    margin-left: 5px;
+}
+
+#more-design {
+    padding: 20px;
+    border-radius: 40px;
+    border: 2px solid black;
+    font-size: 20px;
+    margin-left: 450px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#more-design:hover {
+    background-color: rgb(206, 197, 197);
+}
+
+/* Designer */
+
+.designer {
+    background-color: rgba(251, 178, 44, 0.884);
+}
+
+h3 {
+    font-size: 50px;
+    padding-top: 150px;
+}
+
+.designer p {
+    text-align: center;
+    margin: 20px 200px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.designer #start {
+    width: 200px;
+    border-radius: 25px;
+    margin-left: 400px;
+    margin-right: 20px;
+}
+
+.designer #hiring {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: rgb(206, 197, 197);
+}
+
+.designer #hiring:hover {
+    background-color: rgb(104, 94, 94);
+}
+
+.designer a {
+    color: black;
+}
+
+#end {
+    padding-bottom: 100px;
+}
+
+/* catergories */
+
+#catergories {
+    margin: 20px;
+    margin-top: 50px;
+}
+
+#catergories .slider {
+    width: 95%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+
+}
+
+#catergories .slides {
+    display: flex;
+    animation: slide 10s infinite linear;
+    flex-wrap: nowrap;
+}
+
+#catergories .slides img {
+    width: 200px;
+    border-radius: 10px;
+    height: 200px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.slide p {
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+
+/* Footer */
+
+footer ul li {
+    font-size: 17px;
+}
+
+footer #left {
+    margin-left: 200px;
+}
+
+footer #second li {
+    color: rgb(124, 117, 117);
+}
+
+footer li:hover {
+    color: rgb(124, 117, 117);
+}
+
+footer #second li:hover {
+    color: black;
+}
