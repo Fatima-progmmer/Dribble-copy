@@ -350,3 +350,16 @@ footer li:hover {
 footer #second li:hover {
     color: black;
 }
+
+
+#singup {
+    position: absolute;
+    right: 160px; /* Adjust position next to the Log In button */
+    top: 30px; /* Align with Log In button */
+}
+
+#login {
+    position: absolute;
+    right: 50px; /* Keep Log In button in place */
+    top: 30px; /* Align with Sign Up button */
+}
